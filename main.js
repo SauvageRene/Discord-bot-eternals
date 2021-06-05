@@ -14,7 +14,7 @@ client.once('ready', () => {
 
 
 
-client.login('ODUwODY5MDYxOTgyMDkzMzQy.YLv_kA.dd3b_tEYxGcF3wSUkr3O6CzQzNM'); 
+client.login('');
 
 // discord bot is working but since token was posted on github, Token had to be regenerated 
 
