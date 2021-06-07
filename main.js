@@ -26,7 +26,7 @@ client.on('message', message =>{
     const command = args.shift().toLowerCase();
 
     if(command === 'ping'){
-        message.channel.send('pong!');
+        client.commands.get('ping').execute(message,args);
     }
 });
 
