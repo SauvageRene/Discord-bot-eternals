@@ -8,8 +8,12 @@ const fs = require('fs')
 
 client.commands = new Discord.Collection();
 
-const commandFiles = fs.readdirSync('');
-
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js')); // Making sure out bot is only reading JS files
+// Loop through the files to make sure its the correct file 
+for(const file of commandFiles){
+    const command = require(`./commands/${file}`);
+    client.commands.set(command.name, command);
+}
 
 client.once('ready', () => {
     console.log('Eternals is online!');
