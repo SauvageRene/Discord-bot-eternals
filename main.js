@@ -27,7 +27,10 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message,args);
-    }
+
+    } else if(command === 'nyx'){
+        client.commands.get('nyx').execute(message,args);
+        }
 });
 
 
