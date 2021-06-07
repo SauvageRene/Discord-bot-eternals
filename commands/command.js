@@ -6,10 +6,12 @@ module.exports = {
         .setColor('#304281')
         .setTitle('Rules')
         .setDescription('an Embed test')
-        .addFields(
-            {name: 'Rule 1', value: 'Be nice'}
+        .addFields()
+            {name: 'Rule 1', value: 'Be nice'},
+            {name: 'Rule 2', value: 'No spam'}
+
         )
-        .addImage()
-        setFooter('Make sure to check out the rules channel');
+        .setImage()
+        setFooter('Make sure to check out the channel rules');
     }
 }
