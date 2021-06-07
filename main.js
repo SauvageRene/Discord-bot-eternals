@@ -30,7 +30,9 @@ client.on('message', message =>{
 
     } else if(command === 'nyx'){
         client.commands.get('nyx').execute(message,args);
-        }
+    } else if(command === 'tiktok'){
+        client.commands.get('tiktok').execute(message,args);
+    }
 });
 
 
