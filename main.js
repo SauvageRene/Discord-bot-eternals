@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = '-';
+const prefix = '!';
 
 const fs = require('fs')
 
@@ -32,6 +32,8 @@ client.on('message', message =>{
         client.commands.get('nyx').execute(message,args);
     } else if(command === 'tiktok'){
         client.commands.get('tiktok').execute(message,args);
+    } else if(command === 'command'){
+        client.commands.get('command').execute(message, args, Discord);
     }
 });
 
