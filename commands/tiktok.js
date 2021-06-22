@@ -9,3 +9,4 @@ module.exports = {
         }
     }
 }
+// message.member.roles.cache.has(Specify a role(admin, mods, newbies, etc))

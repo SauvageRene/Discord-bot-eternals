@@ -25,6 +25,7 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
+
     if(command === 'ping'){
         client.commands.get('ping').execute(message,args);
 
@@ -32,8 +33,10 @@ client.on('message', message =>{
         client.commands.get('nyx').execute(message,args);
     } else if(command === 'tiktok'){
         client.commands.get('tiktok').execute(message,args);
-    } else if(command === 'command'){
-        client.commands.get('command').execute(message, args, Discord);
+    } else if(command === 'rules'){
+        client.commands.get('rules').execute(message, args, Discord);
+    } else if(command === 'kopphimedia'){
+        client.commands.get('kopphimedia').execute(message, args, Discord);
     }
 });
 
