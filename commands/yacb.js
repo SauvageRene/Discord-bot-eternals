@@ -1,7 +1,7 @@
 module.exports = {
-    name: 'Eternal Catalyst', 
+    name: 'yacb', 
     description: "Catalyst Socials",
-    execute(message, args, Discord) {
+    execute(client, message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#042475')
         .setTitle('Eternal Catalyst')

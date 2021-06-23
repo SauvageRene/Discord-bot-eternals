@@ -1,7 +1,7 @@
 module.exports = {
     name: 'kopphimedia', 
     description: "Embeds!",
-    execute(message, args, Discord) {
+    execute(client, message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#ed4795')
         .setTitle('Kopphi Media')
