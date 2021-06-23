@@ -15,6 +15,7 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
+
 client.once('ready', () => {
     console.log('Eternals is online!');
 });
@@ -37,8 +38,12 @@ client.on('message', message =>{
         client.commands.get('rules').execute(message, args, Discord);
     } else if(command === 'kopphimedia'){
         client.commands.get('kopphimedia').execute(message, args, Discord);
+    } else if (command === 'YACB Media'){
+        client.commands.get('YACB').execute(message, args, Discord);
     }
 });
+
+
 
 
 
